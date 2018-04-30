@@ -12,7 +12,7 @@ Our motivation behind this project is to learn more about the blockchain technol
 
 ## Contribute
 You can contribute to our project right here on GitHub! 
-Follow our [contributing guideline](https://github.com/#) to get started.
+Follow our [contributing guideline](https://github.com/BadNameException/Counzl/blob/master/CONTRIBUTING.MD) to get started.
 
 ## Credits
 Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
