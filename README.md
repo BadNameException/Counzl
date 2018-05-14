@@ -17,7 +17,7 @@ First of all, thanks to all the developers that contributed to the git repositor
 
 ## System architecture
 The system architecture for our program is quite simple. It can appear a little bit perplex, but this is because we use UH-IaaS to host the server.  
-![System Architecture](https://github.com/BadNameException/Counzl/sys_architecture.jpg)
+![System Architecture](https://github.com/BadNameException/Counzl/blob/master/sys_architecture.jpg)
 
 ## Our own 'Utilities' package 
 This package consists of 'homemade' functions that we have realized were going to be applied in the project more than once.
