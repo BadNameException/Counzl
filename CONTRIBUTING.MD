@@ -17,5 +17,4 @@ The community is essential for Counzl to grow. We are currently looking for deve
 
 ### Summary
 
-* Changes resulting in test pipeline failures will be reverted if they cannot
-  be resolved within one business day.
+* At the moment the only platform needed is GitHub. This might change at a later moment, but please keep yourself updated as this may change.
