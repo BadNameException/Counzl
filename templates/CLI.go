@@ -1,54 +1,35 @@
-package app
+package main
 
 import (
-	"./modules/counzl_chat"
-	"./modules/users"
 	"gopkg.in/abiosoft/ishell.v2"
-	"utilities/cmd"
 )
 
-// Denne filen skal ha muligheten til å launche enhver modul.
-func Welcome(online bool) {
+// This file should be able to execute the module - this is just the interface
+func Run_CLI() {
 	shell := ishell.New()
-	shell.Print("\n" + cmd.ChangeColor("Velkommen til vårt Open Source prosjekt, Counzl!", "brightBlue") + "                                                  ")
-	shell.Print("\n" + "Hvis dette er første gang du bruker Counzl; skriv '" + cmd.ChangeColor("hjelp", "green") + "'!\nDette vil gi deg en liste over kommandoer :)")
+	shell.Print("Welcome to Counzl"
+	shell.Print("Type hjelp to get a list of commands :)")
 	shell.Println()
 	// register a function for "greet" command.
-	shell.AddCmd(&ishell.Cmd{
-		Name: "loading",
-		Help: "Test graphics for 'loading'",
-		Func: func(c *ishell.Context) {
-			cmd.Loading()
-		},
-	})
 
+	// 
 	shell.AddCmd(&ishell.Cmd{
-		Name: "chat",
-		Help: "Gå til chatte suiten",
+		Name: "test", // name of the command
+		Help: "", // description of the command; this will be displayed if you type 'hjelp'
 		Func: func(c *ishell.Context) {
-			switch online {
-			case true:
-				counzl_chat.Chatroom()
-			case false:
-				shell.Print("\n" + "Du kan ikke bruke 'chatroom' når brukeren din ikke er registrert på server")
-			}
+			
+			fmt.Println("This is the function body for test-command")
 
 		},
 	})
 
 	shell.AddCmd(&ishell.Cmd{
-		Name: "printusers",
-		Help: "Print ut alle lokale brukere",
+		Name: "another command", // the name should not be as long as this
+		Help: "this is another command",
 		Func: func(c *ishell.Context) {
-			users.PrintLocalUsers()
-		},
-	})
-
-	shell.AddCmd(&ishell.Cmd{
-		Name: "logout",
-		Help: "Logg ut",
-		Func: func(c *ishell.Context) {
-			AccessCounzl()
+			
+			fmt.Println("This is the function body to 'another command'")
+			
 		},
 	})
 

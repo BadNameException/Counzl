@@ -1,4 +1,4 @@
-package users
+package main
 
 import (
 	"crypto/tls"
@@ -7,8 +7,6 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"utilities/cmd"
-	"utilities/converter"
 )
 
 const ( // Location of the keys
