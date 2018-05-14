@@ -1,6 +1,6 @@
 # How to contribute
 
-The community is essential for Counzl to grow. We are currently looking for anyone willing to participate!
+The community is essential for Counzl to grow. We are currently looking for developers willing to participate!
 
 ## Getting Started
 
